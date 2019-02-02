@@ -89,7 +89,7 @@ print('お疲れ様でした' + str(count) + '問中' + str(count-len(wrong_answ
 print('正解率は' + str(int((rate*100))) + '%です。')
     
 # 誤答リストを出力
-if rate != 1:
+if wrong_answer:
     now = datetime.datetime.now()
     output_file_name = 'wa_{0:%Y}_{0:%m%d}_{0:%H}-{0:%M}-{0:%S}.csv'.format(now)
 
